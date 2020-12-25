@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #F1F3F8;
+    scroll-behavior: smooth;
+    font-family: 'PingFang SC', yxFont, 'Microsoft Yahei';
+}
+
+@media (min-width: 560px) {
+
+    // 兼容pc页面
+    html {
+        font-size: 75px;
+    }
+    html, body {
+        max-width: 562.5px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    // 针对375设计稿  font-size:50px, 7.5rem = 100vm 1rem = 13.333333vm, 如果是750设计稿，像素值需要除以2
+    // 针对750设计稿 font-size: 50px, 15rem = 100wm 1rem = 6.6666666vm
+    html{
+        font-size: 13.33333333vw;
+    }
+    
+    html, body {
+        max-width: 1024px;
+    }
+}
+
+.full-height {
+    height: 100%;
+}
+
+.scroll-able {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.text-color {
+    color: $text-color;
+}
+.text-color7 {
+    color: $text-color7;
+}
+.text-color5 {
+    color: $text-color5;
+}
+.text-color2 {
+    color: $text-color2;
+}
+.text-color3 {
+    color: $text-color3;
+}
+.flex-fixed {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+.flex-fixed-container {
+    flex: 1;
+}
+
+.primary-color {
+    color: $primary-color;
+}
+.hk-primary-color {
+    color: $hk-primary-color;
+}
+
+.right-icon {
+    transform: rotate(180deg);
+    display: inline-block;
+}
+.warn-color {
+    color: $warn-color;
+}
+.common-radius{
+    border-radius: 4px;
+}
+.en-font-size input{
+    font-size: 16px;
+}
+.yx-company-provide {
+    padding: 10px $global-padding;
+    font-size:12px;
+    font-family:DINPro-Regular;
+    font-weight:400;
+    color:rgba(53,53,71,0.2);
+    line-height:17px;
+}
+.footer-button-box  {
+    button {
+        font-size: 16px;
+        width: 100%;
+        border-radius: 0;
+    }
+}
+.primary-color-line {
+    color: $primary-color-line;
+}
+.success-color {
+    color: $success-color;
+}
+

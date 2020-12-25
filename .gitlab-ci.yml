@@ -1,0 +1,52 @@
+stages:
+  - build-211-dev
+  - build-211-sit
+  - build-uat1
+variables:
+  # TODO 当我们新建一个新的多页项目的时候，我们需要配置持续集成参数
+  # /www/dev/webapp-pages/webapp
+  # /www/dev/[targetpage]-pages/[project]
+  # 这2个参数主要控制了部署的位置
+  project: webapp
+  # webapp-pages
+  targetpage: webapp
+  # 项目远程的仓库位置 /home/gitlab/webapp-jy
+  gitRep: webapp-jy
+  # 生成仓库名称 http://szgitlab.youxin.com/web-pro/m_yxzq_com-webapp
+  proRep: m_yxzq_com-webapp
+
+
+
+build-211-dev:
+  stage: build-211-dev
+  only:
+    refs:
+      - /^dev$/
+    variables:
+      - $CI_COMMIT_MESSAGE =~ /\-\-build/
+  script:
+    - sh /home/gitlab/front-shell/projects/youxin-webapp/entry.sh -b dev
+  tags:
+    - web-dev
+build-211-sit:
+  stage: build-211-sit
+  only:
+    refs:
+      - /^sit$/
+    variables:
+      - $CI_COMMIT_MESSAGE =~ /\-\-build/
+  script:
+    - sh /home/gitlab/front-shell/projects/youxin-webapp/entry.sh -b sit
+  tags:
+    - web-sit
+build-uat1:
+  stage: build-uat1
+  only:
+    refs:
+      - /^uat$/
+    variables:
+      - $CI_COMMIT_MESSAGE =~ /\-\-build/
+  script:
+    - sh /home/gitlab/front-shell/projects/youxin-webapp/entry.sh -b uat
+  tags:
+    - web-uat1

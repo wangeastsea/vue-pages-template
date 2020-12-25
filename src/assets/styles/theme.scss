@@ -1,0 +1,150 @@
+// 内地
+$primary-color: #0d50d8; // 主品牌色
+$primary-color-line: #2f79ff; // 主品牌边框色
+$background-primary-color: rgba($primary-color-line, 0.05); // 背景色/分割线
+$background-color: #ffffff; // 背景色
+$tip-color: #353547; // 提示文案
+$tip-color25: rgba($tip-color, 0.25); // 提示文案
+$border-color: #e1e1e1; // 输入线-默认
+$border-color5: rgba($border-color, 0.5); // 输入线
+$sub-title: rgba(53, 53, 71, 0.7); // 次标题颜色
+$auxiliray-text: rgba(53, 53, 71, 0.5); // 辅助文字颜色
+$tip-text: rgba(53, 53, 71, 0.2); // 提示文字颜色
+$text-link-color: #2f79ff; // 大陆版文字链接颜色
+$text-active-color: #c4966d; // 高亮文字颜色
+$text-link-color12: rgba($text-link-color,0.12);
+$text-link-color06: rgba($text-link-color,0.06);
+$text-active-color:#C4966D; // 高亮文字颜色
+$text-button-color: #FFFFFF;
+$edda-bgc-color:#EBEBEB;
+
+$text-color: #191919; // 正文颜色
+$background-bottom-color: rgba($text-color, 0.05); // 背景色/分割线
+$text-color7: rgba($text-color, 0.6); // 次标题颜色
+$text-color6: rgba($text-color, 0.6); // 次标题颜色
+$text-color5: rgba($text-color, 0.5); // 辅助文字颜色
+$text-color2: rgba($text-color, 0.2); // 提示文字颜色
+$text-color3: rgba($text-color, 0.3); // 提示文字颜色
+
+$title-color: #191919;
+$title-color5: rgba($title-color, 0.5);
+
+$global-padding: 12px;
+$hk-global-padding: 18px;
+
+$wait-color: #2177ff; // 待处理，已认购
+$in-processing-color: #ffba00; // 处理中
+$error-color: #ea3d3d;
+$success-color: #41CA1E;
+$warn-color: #ff744a;
+$active-color: #ff7439;
+$active-content: #193165;
+$detail-border-color: #9d9fa3;
+$warm-text-color: #ff7127; // 中签 提示
+$tips-color: #ea3d3d;
+
+$tag-primary-color: #7a5cff; // 标签色
+$tag-brown-color: #d0b471; // 标签色
+
+// 黑皮肤
+$background-bottom-color-black: #17181d; // 黑皮肤的前景色
+
+// 香港
+$hk-primary-color: #0091FF;
+$hk-text-line-color: #2177ff;
+$hk-title-color: #0ec0f1;
+$hk-text-highlight-color: #1e93f3;
+
+$hk-text-color: #393939; // 正文颜色
+$hk-text-color7: rgba($hk-text-color, 0.7); // 次标题颜色
+$hk-text-color6: rgba($hk-text-color, 0.6); // 辅助文字颜色
+$hk-text-color5: rgba($hk-text-color, 0.5); // 辅助文字颜色
+$hk-text-color2: rgba($hk-text-color, 0.2); // 提示文字颜色
+$hk-text-color3: rgba($hk-text-color, 0.3); // 提示文字颜色
+$hk-text-color4: rgba($hk-text-color, 0.4); // 提示文字颜色
+$hk-text-color1: rgba($hk-text-color, 0.1); // 提示文字颜色
+
+$fee-border-color:rgba(#D6D6D6, 0.5);
+
+$hk-background-color: #f8f8f8;
+
+$btn-color:#F1F3F8;
+
+@mixin flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+$card-text-color: #0091ff;
+
+// 此文件通过sass-loader添加至全局
+// 全局变量，均以‘yl-’开头
+
+// 通用
+
+$yl-share-color: #e97135;
+
+// 香港版
+$yl-hk-blue: #0091ff;               // 蓝色（主品牌色）
+$yl-hk-cyan: #16daef;               // 青色（主品牌色）
+$yl-hk-red: #e72653;                // 红色（红跌）
+$yl-hk-green: #00c58d;              // 绿色（绿涨）
+$yl-hk-backgound: #fbfcfe;         // 灰色系 - 背景色
+$yl-hk-foreground: #fff;            // 灰色系 - 前景色
+$yl-hk-black: #000;                  // 灰色系 - 主标题、正文
+$yl-hk-gray: #666;                   // 灰色系 - 正文
+$yl-hk-light-gray: #999;            // 灰色系 - 辅助文字
+$yl-hk-lighter-gray: #e5e5e5;      // 灰色系 - 边框、分割线=
+$yl-hk-sub-blue: #2177ff;           // 辅助色 - 蓝色 - 标签（待处理、待认购）
+$yl-hk-sub-yellow: #ffba00;         // 辅助色 - 黄色 - 标签（处理中）
+$yl-hk-sub-green: #41ca1e;          // 辅助色 - 绿色 - 标签（操作完成）
+$yl-hk-sub-orange: #ff7127;         // 辅助色 - 桔色 - 标签（中签、提示）
+$yl-hk-sub-purple: #5b3be8;         // 辅助色 - 紫色 - 标签（待公布）
+
+// 大陆版
+$yl-ml-blue-btn: #0d50d8;           // 蓝色（主色：按钮）
+$yl-ml-blue-link: #2f79ff;          // 蓝色（主色：文字、链接、买入）
+$yl-ml-yellow: #ffbf32;             // 黄色
+$yl-ml-red: #ea3d3d;                 // 红涨
+$yl-ml-green: #00ba60;               // 绿跌
+$yl-ml-backgound: #121216;          // 灰色系 - 背景、分割线
+$yl-ml-foreground: #17181d;         // 灰色系 - 前景
+$yl-ml-font-white-1: #fff;          // 灰色系 - (白色)一级文字
+$yl-ml-font-white-2: rgba($yl-ml-font-white-1, 0.6); // 灰色系 - (白色)二级文字
+$yl-ml-font-white-3: rgba($yl-ml-font-white-1, 0.4); // 灰色系 - (白色)三级文字
+$yl-ml-font-white-4: rgba($yl-ml-font-white-1, 0.2); // 灰色系 - (白色)四级文字
+$yl-ml-border-white: rgba($yl-ml-font-white-1, 0.05); // 灰色系 - (白色)分割线
+$yl-ml-font-black-1: #191919;          // 灰色系 - (黑色)一级文字
+$yl-ml-font-black-2: rgba($yl-ml-font-black-1, 0.65); // 灰色系 - (黑色)二级文字
+$yl-ml-font-black-3: rgba($yl-ml-font-black-1, 0.45); // 灰色系 - (黑色)三级文字
+$yl-ml-font-black-4: rgba($yl-ml-font-black-1, 0.2); // 灰色系 - (黑色)四级文字
+$yl-ml-border-black: rgba($yl-ml-font-black-1, 0.05); // 灰色系 - (黑色)分割线
+$yl-ml-shade: rgba($yl-ml-font-black-1, 0.5);          // 灰色系 - 遮罩弹层
+$yl-ml-sub-blue: #2177ff;            // 辅助色 - 蓝色
+$yl-ml-sub-yellow: #ffba00;         // 辅助色 - 黄色
+$yl-ml-sub-green: #41ca1e;          // 辅助色 - 绿色
+$yl-ml-sub-orange: #ff7127;         // 辅助色 - 桔色
+$yl-ml-sub-purple: #7a5cff;         // 辅助色 - 紫色
+$yl-ml-sub-khaki: #d0b471;          // 辅助色 - 卡其色
+
+// 大陆版 - 字体大小
+$yl-ml-padding: 12px;
+$yl-ml-card-out-padding: 10px;
+$yl-ml-fontsize-huge: 24px; // 超大标题
+$yl-ml-fontsize-big: 18px; // 页面大标题一、数字正文一
+$yl-ml-fontsize-main-text-1: 16px; // 正文一
+$yl-ml-fontsize-main-text-2: 14px; // 正文二
+$yl-ml-fontsize-sub-text-1: 12px; // 辅助一
+$yl-ml-fontsize-sub-text-2: 10px; // 辅助二
+
+@mixin font($weight, $font-size, $line-height, $font-family){
+    font-weight: $weight;
+    font-size: $font-size;
+    font-family: $font-family;
+    line-height: $line-height
+}
+
+$PingFangSCMedium: PingFangSC-Medium,PingFang SC;
+$PingFangSCRegular: PingFangSC-Regular, PingFang SC;
+
+
